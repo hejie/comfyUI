@@ -23,7 +23,7 @@
 ```sh
 echo 'export HF_ENDPOINT="https://hf-mirror.com"' >> ~/.bashrc
 ```
-- 使其生效
+使其生效
 ```sh
 source ~/.bashrc
 ```
@@ -31,27 +31,27 @@ source ~/.bashrc
 
 1. 安装 ComfyUI
 
-- 克隆文件
+克隆文件
 ```sh
 git clone https://github.com/comfyanonymous/ComfyUI.git
 ```
-- 安装依赖文件
+安装依赖文件
 ```sh
 pip install -r requirements.txt
 ```
-- 启动
+启动
 ```sh
 python main.py 或者 nohup python main.py  >/dev/null 2>p_error.log 2>&1 &
 ```
-- 输出地址 [http://127.0.0.1:8188](http://127.0.0.1:8188)
+输出地址 [http://127.0.0.1:8188](http://127.0.0.1:8188)
 
 2. 集成stable-diffusion-3-medium
 
-  - 使用 HF 官方的 huggingface-hub CLI 程序下载模型
+  使用 HF 官方的 huggingface-hub CLI 程序下载模型
   ```sh
   pip install huggingface_hub[cli]
   ```
-  - 使用专用的cli下载工具，能够实现断点续传，能够指定下载路径，更加方便我们对于模型资源的管理、硬件资源的使用
+  使用专用的cli下载工具，能够实现断点续传，能够指定下载路径，更加方便我们对于模型资源的管理、硬件资源的使用
   ```sh
 
   huggingface-cli download stabilityai/stable-diffusion-3-medium sd3_medium_incl_clips_t5xxlfp8.safetensors --local-dir=./models/checkpoints/ --token xxx
