@@ -1,7 +1,7 @@
 
 
 # comfyUI集成stable-diffusion-3
-
+![repository](https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/c24904d4-f0f0-4a26-9470-fec227dde15c/image-90.png?format=1500w)
 
 ## 目录
 
